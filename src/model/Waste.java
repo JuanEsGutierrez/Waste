@@ -1,14 +1,11 @@
 package model;
-public class Waste extends Reciclamos {
+public class Waste {
     //Attributes
     private String id;
     private String name;
     private String source;
     private String color;
     private int decompositionTime;
-    
-    //Relationships
-    private Product product;
 
     //Methods
     /**
