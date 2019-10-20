@@ -30,4 +30,9 @@ public class Inert extends Waste {
     public void setAdvice(String advice) {
         this.advice = advice;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " advice:" + getAdvice();
+    }
 }

@@ -30,4 +30,9 @@ public class Biodegradable extends Waste {
     public void setComposting(boolean composting) {
         this.composting = composting;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " composting:" + getComposting();
+    }
 }

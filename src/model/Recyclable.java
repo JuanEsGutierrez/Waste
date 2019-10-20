@@ -47,4 +47,9 @@ public class Recyclable extends Waste {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " type:" + getType() + ", description:" + getDescription();
+    }
 }

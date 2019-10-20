@@ -1,5 +1,5 @@
 package model;
-public class Waste {
+public abstract class Waste {
     //Attributes
     private String id;
     private String name;
@@ -93,10 +93,8 @@ public class Waste {
         this.decompositionTime = decompositionTime;
     }
 
-    /**
-     * @return the product
-     */
-    public Product getProduct() {
-        return product;
-    }
+    @Override
+    public String toString() {
+        return "id:" + getId() + ", name:" + getName() + ", source:" + getSource() + ", color:" + getColor() + ", decompositionTime:" + getDecompositionTime();
+    }    
 }

@@ -1,5 +1,5 @@
 package model;
-public class Product extends Reciclamos {
+public class Product {
     //Attributes
     private String id;
     private String name;
@@ -13,6 +13,7 @@ public class Product extends Reciclamos {
         this.id = id;
         this.name = name;
         this.description = description;
+        wasteList = new Waste[10];
     }
 
     /**
@@ -62,5 +63,10 @@ public class Product extends Reciclamos {
      */
     public Waste[] getWasteList() {
         return wasteList;
+    }
+
+    @Override
+    public String toString() {
+        return "name:" + getName() + " (id:" + getId() + ", description:" + getDescription() + ")";
     }
 }
