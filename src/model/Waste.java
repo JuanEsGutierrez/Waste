@@ -95,6 +95,6 @@ public abstract class Waste {
 
     @Override
     public String toString() {
-        return "id:" + getId() + ", name:" + getName() + ", source:" + getSource() + ", color:" + getColor() + ", decompositionTime:" + getDecompositionTime();
+        return "id: " + getId() + ", name: " + getName() + ", source: " + getSource() + ", color: " + getColor() + ", decomposition time: " + getDecompositionTime();
     }    
 }

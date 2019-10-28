@@ -65,8 +65,27 @@ public class Product {
         return wasteList;
     }
 
+    /**
+     * @param i the wasteList position
+     * @return the waste object thats into the specified wasteList position
+     */
+    public Waste getWaste(int i) {
+        return wasteList[i];
+    }
+
+    /**
+	 * @param waste the waste object to set into wasteList
+	 */
+	public void setWasteList(Waste waste) {
+		for(int i = 0; i < wasteList.length; i++) {
+            if(wasteList[i] == null) {
+                wasteList[i] = waste;
+            }
+        }
+	}
+    
     @Override
     public String toString() {
-        return "name:" + getName() + " (id:" + getId() + ", description:" + getDescription() + ")";
+        return "name: " + getName() + ", id: " + getId() + ", description: " + getDescription();
     }
 }

@@ -33,6 +33,6 @@ public class Inert extends Waste {
 
     @Override
     public String toString() {
-        return super.toString() + " advice:" + getAdvice();
+        return super.toString() + " advice: " + getAdvice();
     }
 }

@@ -50,6 +50,6 @@ public class Recyclable extends Waste {
 
     @Override
     public String toString() {
-        return super.toString() + " type:" + getType() + ", description:" + getDescription();
+        return super.toString() + " type: " + getType() + ", description: " + getDescription();
     }
 }
